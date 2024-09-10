@@ -35,7 +35,7 @@ To compile the project, you have two options:
    mingw32-make
 
 2. Direct Compilation:
-    '''sh
+    ```sh
      g++ -std=c++23 -o main.exe main.cpp ./search/node.cpp ./search/graph.cpp -I search
     
 ## Usage
