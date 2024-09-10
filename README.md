@@ -15,7 +15,7 @@ This project provides an implementation of several fundamental search algorithms
 
 To compile the project, you have two options:
 
-**1. Using CMake**:
+**1. Using CMake:**
 
    ```sh
    # Check if the 'build' directory exists
@@ -34,7 +34,8 @@ To compile the project, you have two options:
    cmake -G "MinGW Makefiles" ..
    mingw32-make
 
-**2. Direct Compilation**:
+
+**2. Direct Compilation:**:
     ```sh
      g++ -std=c++23 -o main.exe main.cpp ./search/node.cpp ./search/graph.cpp -I search
     
