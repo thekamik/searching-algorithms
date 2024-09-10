@@ -38,7 +38,6 @@ To compile the project, you have two options:
 **2. Direct Compilation:**:
     ```sh
      g++ -std=c++23 -o main.exe main.cpp ./search/node.cpp ./search/graph.cpp -I search
-   ```
     
 ## Usage
 After compilation, you can run the main.exe to execute the search algorithms. Ensure that all necessary source files are in the appropriate directories.
