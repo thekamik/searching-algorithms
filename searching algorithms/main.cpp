@@ -97,38 +97,6 @@ int main() {
     int startNode = 1;
     int endNode = 13;
 
-    // Test Random Walker
-    std::cout << "Random Walker" << std::endl;
-    auto traceResult = map.randomWalker(startNode, endNode, 10);
-
-    if (traceResult) {
-        std::cout << "Distance: " << traceResult->distance << std::endl;
-
-        Trace t = traceResult.value();
-        displayTrace(t);
-
-        // Try to mutate trace
-
-        std::cout << "Mutation" << std::endl;
-
-        // the intersection point is returned twice
-        auto mutationResult = map.traceMutation(t, 10);
-
-        if (mutationResult) {
-            std::cout << "Distance: " << mutationResult->distance << std::endl;
-
-            Trace tm = mutationResult.value();
-            displayTrace(tm);            
-        }
-        else {
-            std::cout << "impossible to generate mutation" << std::endl;
-        }
-    }
-    else {
-        std::cout << "impossible to generate trace" << std::endl;
-    }
-    
-
     // Test Dijkstra algorithm
     std::cout << "Dijkstra" << std::endl;
     Trace trace1 = map.dijkstra(startNode, endNode);
@@ -166,5 +134,37 @@ int main() {
         Trace: [1, 3, 10, 6, 13]
     */
 
+
+    // Test Random Walker
+    std::cout << "Random Walker" << std::endl;
+    auto traceResult = map.randomWalker(startNode, endNode, 10);
+
+    if (traceResult) {
+        std::cout << "Distance: " << traceResult->distance << std::endl;
+
+        Trace t = traceResult.value();
+        displayTrace(t);
+
+        // Try to mutate trace
+
+        std::cout << "Mutation" << std::endl;
+
+        // the intersection point is returned twice
+        auto mutationResult = map.traceMutation(t, 10);
+
+        if (mutationResult) {
+            std::cout << "Distance: " << mutationResult->distance << std::endl;
+
+            Trace tm = mutationResult.value();
+            displayTrace(tm);            
+        }
+        else {
+            std::cout << "impossible to generate mutation" << std::endl;
+        }
+    }
+    else {
+        std::cout << "impossible to generate trace" << std::endl;
+    }
+    
     return 0;
 }
