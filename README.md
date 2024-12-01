@@ -26,6 +26,7 @@ Refer to the `main.cpp` file in this repository for a practical example of how t
 
 - **CMake Support**: The project uses CMake for build configuration and management.
 - **Direct Compilation**: You can also compile the project directly using the provided `g++` command.
+- **Designed as Library**: The project is structured to function as a reusable library.
 
 ## Compilation
 
