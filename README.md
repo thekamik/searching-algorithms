@@ -10,6 +10,21 @@ This project provides an implementation of several fundamental search algorithms
 
 This repository contains code that is designed to be easily integrated into other projects. The primary component is the graph-related functionality, which can be seamlessly added to your own codebase.
 
+## Project Structure
+```
+SEARCHING-ALGORITHMS/
+├── example/
+│   └── main.cpp           # Example program demonstrating searching algorithms
+├── include/
+│   ├── graph.h            # Header file for the graph implementation
+│   └── node.h             # Header file for the node implementation
+├── src/
+│   ├── graph.cpp          # Implementation of the graph
+│   └── node.cpp           # Implementation of the node
+├── CMakeLists.txt         # CMake build configuration
+└── run.ps1                # PowerShell script to automate the build and execution
+```
+
 ### Example
 
 Refer to the `main.cpp` file in this repository for a practical example of how to use the code.
