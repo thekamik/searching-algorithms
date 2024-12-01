@@ -10,14 +10,6 @@ This project provides an implementation of several fundamental search algorithms
 
 This repository contains code that is designed to be easily integrated into other projects. The primary component is the graph-related functionality, which can be seamlessly added to your own codebase.
 
-### Integration Instructions
-
-1. **Include the Code:**
-   - Add the `search` folder from this repository to your project directory.
-
-2. **Usage:**
-   - Include the header file `graph.h` in your source files where you need the graph functionality.
-
 ### Example
 
 Refer to the `main.cpp` file in this repository for a practical example of how to use the code.
