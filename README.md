@@ -34,35 +34,6 @@ Refer to the `main.cpp` file in this repository for a practical example of how t
 - **CMake Support**: The project uses CMake for build configuration and management.
 - **Direct Compilation**: You can also compile the project directly using the provided `g++` command.
 - **Designed as Library**: The project is structured to function as a reusable library.
-
-## Compilation
-
-To compile the project, you have two options:
-
-**1. Using CMake:**
-
-   ```sh
-   # Check if the 'build' directory exists
-   if (Test-Path -Path "build") {
-       Write-Output "Removing existing 'build' directory..."
-       Remove-Item -Path "build" -Recurse -Force
-   }
-   
-   # Create the 'build' directory
-   New-Item -Path "build" -ItemType Directory
-   
-   # Change to the 'build' directory
-   Set-Location -Path "build"
-   
-   # Run cmake and make commands
-   cmake -G "MinGW Makefiles" ..
-   mingw32-make
-   ```
-
-**2. Direct Compilation:**
-   ```sh
-   g++ -std=c++23 -o main.exe main.cpp ./search/node.cpp ./search/graph.cpp -I search
-   ```
     
 ## Usage
 After compilation, you can run the main.exe to execute the search algorithms. Ensure that all necessary source files are in the appropriate directories.
